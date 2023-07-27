@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
     <script src="https://kit.fontawesome.com/9e5cde3421.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <!-- header section starts -->
 
@@ -15,65 +17,344 @@
         <section class="flex">
             <div id="menu-btn" class="fas fa-bars-staggered"></div>
 
-            <a href="home.html" class="logo"><i class="fas fa-briefcase"></i>
-        JOB RECTRUITMEMT WEBSITE</a>
+            <a href="index.html" class="logo"><i class="fas fa-briefcase"></i>
+                JOB RECTRUITMEMT WEBSITE</a>
 
-        <nav class="navbar">
-            <a href="home.html">HOME</a>
-            <a href="about.html">ABOUT US</a>
-            <a href="jobs.html">ALL JOB</a>
-            <a href="contact.html">CONTACT US</a>
-            <a href="Login.htm">ACCOUNT</a>
-        </nav>
-        <a href="#" class="btn" style="margin-top:0;">POST JOB</a>
+            <nav class="navbar">
+                <a href="index.html">HOME</a>
+                <a href="about.html">ABOUT US</a>
+                <a href="jobs.html">ALL JOB</a>
+                <a href="contact.html">CONTACT US</a>
+                <a href="Login.htm">ACCOUNT</a>
+            </nav>
+            <a href="#" class="btn" style="margin-top:0;">POST JOB</a>
         </section>
     </header>
+    <!----header section ends-->
+
+    <!----job filter section starts-->
+    <div class="job-filter">
+        <h1 class="heading">filter jobs</h1>
+        <form action="" method="post">
+            <div class="flex">
+                <div class="box">
+                    <p>job title <span>*</span></p>
+                    <input type="text" name="title" placeholder="keyword,category or company" required maxlength="20"
+                        class="input">
+                </div>
+                <div class="box">
+                    <p>job location <span>*</span></p>
+                    <input type="text" name="title" placeholder="city,state or country" required maxlength="50"
+                        class="input">
+                </div>
+            </div>
+            <div class="dropdown-container">
+                <div class="dropdown">
+                    <input type="text" readonly placeholder="date posted" name="date" maxlength="20" class="output">
+                    <div class="lists">
+                        <p class="items">today</p>
+                        <p class="items">3 days ago</p>
+                        <p class="items">7 days ago</p>
+                        <p class="items">10 days ago</p>
+                        <p class="items">15 days ago</p>
+                        <p class="items">30 days ago</p>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <input type="text" readonly placeholder="estimated salary" name="date" maxlength="20" class="output">
+                    <div class="lists">
+                        <p class="items">100$ or less</p>
+                        <p class="items">150$ - 500$</p>
+                        <p class="items">500$ - 1000$</p>
+                        <p class="items">1000$ - 2000$</p>
+                        <p class="items">2000$ - 3000$</p>
+                        <p class="items">3000$ - 4000$</p>
+                        <p class="items">4000$ - 5000$</p>
+                        <p class="items">5000$ - 10000$</p>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <input type="text" readonly placeholder="job type" name="date" maxlength="20" class="output">
+                    <div class="lists">
+                        <p class="items">full-time</p>
+                        <p class="items">part-time</p>
+                        <p class="items">intership</p>
+                        <p class="items">contract</p>
+                        <p class="items">temperary</p>
+                        <p class="items">fresher</p>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <input type="text" readonly placeholder="education level" name="date" maxlength="20" class="output">
+                    <div class="lists">
+                        <p class="items">10th pass</p>
+                        <p class="items">12th pass</p>
+                        <p class="items">bachelor's degree</p>
+                        <p class="items">master's degree</p>
+                        <p class="items">diploma</p>
+                    </div>
+                    </div>
+                <div class="dropdown">
+                    <input type="text" readonly placeholder="work shifts" name="date" maxlength="20" class="output">
+                    <div class="lists">
+                        <p class="items">day shift</p>
+                        <p class="items">night shift</p>
+                        <p class="items">flexible shift</p>
+                        <p class="items">fixed shift</p> 
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+    <!----job filter section ends-->
+    <!---all jobs section starts-->
+    <section class="jobs-container">
+        <h1 class="heading">ALL JOBS</h1>
+        <div class="box-container">
+            <div class="box">
+                <div class="company">
+                    <img src="icon-1.jpg" alt="" srcset="">
+                    <div>
+                        <h3>IT INFONSY CO</h3>
+                        <p>2 days ago</p>
+                    </div>
+                </div>
+                <h3 class="job-title">SENIOR WEB DEVELOPER</h3>
+                <p class="location"><i class="fas fa-map-marker-alt"></i>
+                    <span>BURUNDI,RWANDA</span>
+                </p>
+                <div class="tags">
+                    <p><i class="fas fa-dollar-sign"></i><span>10k -25k</span></p>
+                    <p> <i class="fas fa-briefcase"></i><span>part - time</span></p>
+                    <p> <i class="fas fa-clock"></i><span>day shift</span></p>
+                </div>
+                <div class="flex-btn">
+                    <a href="view job .html" class="btn">view details</a>
+                    <button type="submit" class="far fa-heart" name="save"></button>
+                </div>
+            </div>
+            <div class="box">
+                <div class="company">
+                    <img src="icon-3.png" alt="" srcset="">
+                    <div>
+                        <h3>ALL MEDIA LTD</h3>
+                        <span>2 days ago</span>
+                    </div>
+                </div>
+                <h3 class="job-title">QUALIFIED DEVELOPER</h3>
+                <p class="location"><i class="fas fa-map-marker-alt"></i>
+                    <span>BURUNDI,RWANDA</span>
+                </p>
+                <div class="tags">
+                    <p><i class="fas fa-dollar-sign"></i><span>9000</span></p>
+                    <p> <i class="fas fa-briefcase"></i><span>full - time</span></p>
+                    <p> <i class="fas fa-clock"></i><span>flexible shifts</span></p>
+                </div>
+                <div class="flex-btn">
+                    <a href="view job .html" class="btn">view details</a>
+                    <button type="submit" class="far fa-heart"></button>
+                </div>
+            </div>
+            <div class="box">
+                <div class="company">
+                    <img src="icon-2.png" alt="" srcset="">
+                    <div>
+                        <h3>SOFTWARE SOLUTIONS</h3>
+                        <span>POSTED TODAY</span>
+                    </div>
+                </div>
+                <h3 class="job-title">JAVASCRIPT DEVELOPER</h3>
+                <p class="location"><i class="fas fa-map-marker-alt"></i>
+                    <span>BURUNDI,RWANDA</span>
+                </p>
+                <div class="tags">
+                    <p><i class="fas fa-dollar-sign"></i><span>10k - 25k</span></p>
+                    <p> <i class="fas fa-briefcase"></i><span>intership</span></p>
+                    <p> <i class="fas fa-clock"></i><span>night shift</span></p>
+                </div>
+                <div class="flex-btn">
+                    <a href="view job .html" class="btn">view details</a>
+                    <button type="submit" class="far fa-heart"></button>
+                </div>
+            </div>
 
 
+            <div class="box">
+                <div class="company">
+                    <img src="icon-5.jpg" alt="" srcset="">
+                    <div>
+                        <h3>IT WORLD</h3>
+                        <span>19 days ago</span>
+                    </div>
+                </div>
+                <h3 class="job-title">JUNIOR FRONT-END </h3>
+                <p class="location"><i class="fas fa-map-marker-alt"></i>
+                    <span>BURUNDI,RWANDA</span>
+                </p>
+                <div class="tags">
+                    <p><i class="fas fa-dollar-sign"></i><span>20K - 50K</span></p>
+                    <p> <i class="fas fa-briefcase"></i><span>contract</span></p>
+                    <p> <i class="fas fa-clock"></i><span>fixed shift</span></p>
+                </div>
+                <div class="flex-btn">
+                    <a href="view job .html" class="btn">view details</a>
+                    <button type="submit" class="far fa-heart"></button>
+                </div>
+            </div>
 
 
+            <div class="box">
+                <div class="company">
+                    <img src="icon-4.png" alt="" srcset="">
+                    <div>
+                        <h3>MASS IDEA</h3>
+                        <span>2 days ago</span>
+                    </div>
+                </div>
+                <h3 class="job-title">PHP DEVELOPER</h3>
+                <p class="location"><i class="fas fa-map-marker-alt"></i>
+                    <span>BURUNDI,RWANDA</span>
+                </p>
+                <div class="tags">
+                    <p><i class="fas fa-dollar-sign"></i><span>30k -1 lakh</span></p>
+                    <p> <i class="fas fa-briefcase"></i><span>fresher</span></p>
+                    <p> <i class="fas fa-clock"></i><span>fixed shift</span></p>
+                </div>
+                <div class="flex-btn">
+                    <a href="view job .html" class="btn">view details</a>
+                    <button type="submit" class="far fa-heart"></button>
+                </div>
+            </div>
 
+            <div class="box">
+                <div class="company">
+                    <img src="icon-9.png" alt="" srcset="">
+                    <div>
+                        <h3>IT WORLD</h3>
+                        <span>19 days ago</span>
+                    </div>
+                </div>
+                <h3 class="job-title">JUNIOR FRONT-END </h3>
+                <p class="location"><i class="fas fa-map-marker-alt"></i>
+                    <span>BURUNDI,RWANDA</span>
+                </p>
+                <div class="tags">
+                    <p><i class="fas fa-dollar-sign"></i><span>20K - 50K</span></p>
+                    <p> <i class="fas fa-briefcase"></i><span>contract</span></p>
+                    <p> <i class="fas fa-clock"></i><span>fixed shift</span></p>
+                </div>
+                <div class="flex-btn">
+                    <a href="view job .html" class="btn">view details</a>
+                    <button type="submit" class="far fa-heart"></button>
+                </div>
+            </div>
+            <div class="box">
+                <div class="company">
+                    <img src="icon-7.jpeg" alt="" srcset="">
+                    <div>
+                        <h3>SOFTWARE SOLUTIONS</h3>
+                        <span>POSTED TODAY</span>
+                    </div>
+                </div>
+                <h3 class="job-title">JAVASCRIPT DEVELOPER</h3>
+                <p class="location"><i class="fas fa-map-marker-alt"></i>
+                    <span>BURUNDI,RWANDA</span>
+                </p>
+                <div class="tags">
+                    <p><i class="fas fa-dollar-sign"></i><span>10k - 25k</span></p>
+                    <p> <i class="fas fa-briefcase"></i><span>intership</span></p>
+                    <p> <i class="fas fa-clock"></i><span>night shift</span></p>
+                </div>
+                <div class="flex-btn">
+                    <a href="view job .html" class="btn">view details</a>
+                    <button type="submit" class="far fa-heart"></button>
+                </div>
+            </div>
 
-
-
-
-
-
-<!--footer section starts-->
-
-<footer class="footer">
-    <section class="grid">
-        <div class="box">
-          <h3>QUICK LINKS</h3>
-          <a href="home.html"><i class="fas fa-angle-right"></i>HOME</a>
-          <a href="about.html"><i class="fas fa-angle-right"></i>ABOUT</a>
-          <a href="jobs.html"><i class="fas fa-angle-right"></i>ALL JOBS</a>
-          <a href="contact.html"><i class="fas fa-angle-right"></i>CONTACT US</a>
-          <a href="#"><i class="fas fa-angle-right"></i>FILTER SEARCH</a>
+            <div class="box">
+                <div class="company">
+                    <img src="icon-8.jpg" alt="" srcset="">
+                    <div>
+                        <h3>IT INFONSY CO</h3>
+                        <p>2 days ago</p>
+                    </div>
+                </div>
+                <h3 class="job-title">SENIOR WEB DEVELOPER</h3>
+                <p class="location"><i class="fas fa-map-marker-alt"></i>
+                    <span>BURUNDI,RWANDA</span>
+                </p>
+                <div class="tags">
+                    <p><i class="fas fa-dollar-sign"></i></i><span>10k -25k</span></p>
+                    <p> <i class="fas fa-briefcase"></i><span>part - time</span></p>
+                    <p> <i class="fas fa-clock"></i><span>day shift</span></p>
+                </div>
+                <div class="flex-btn">
+                    <a href="view job .html" class="btn">view details</a>
+                    <button type="submit" class="far fa-heart" name="save"></button>
+                </div>
+            </div>
         </div>
-        <div class="box">
-            <h3>EXTRA LINKS</h3>
-            <a href="#"><i class="fas fa-angle-right"></i>ACCOUNT</a>
-            <a href="Login.htm"><i class="fas fa-angle-right"></i>LOGIN</a>
-            <a href="register.html"><i class="fas fa-angle-right"></i>REGISTER</a>
-            <a href="#"><i class="fas fa-angle-right"></i>POST JOB</a>
-            <a href="#"><i class="fas fa-angle-right"></i>DASHBOARD</a>
-          </div>
-          <div class="box">
-            <h3>FOLLOW US</h3>
-            <a href="#"><i class="fab fa-facebook-f"></i>FACEBOOK</a>
-            <a href="#"><i class="fab fa-twitter"></i>TWITTER</a>
-            <a href="#"><i class="fab fa-instagram"></i>INSTAGRAM</a>
-            <a href="#"><i class="fab fa-linkedin"></i>LINKEDIN</a>
-            <a href="#"><i class="fab fa-youtube"></i>YOUTUBE</a>
-          </div>
     </section>
-    <div class="credit">&copy; copyright @ 2023 by <span>ms.web designer</span>| all rights reserved!</div>
-</footer>
+    <!--job section ends-->
+    <!---all jobs section ends-->
+
+
+
+
+
+
+
+
+
+
+
+    <!--footer section starts-->
+
+    <footer class="footer">
+        <section class="grid">
+            <div class="box">
+                <h3>QUICK LINKS</h3>
+                <a href="index.html"><i class="fas fa-angle-right"></i>HOME</a>
+                <a href="about.html"><i class="fas fa-angle-right"></i>ABOUT</a>
+                <a href="jobs.html"><i class="fas fa-angle-right"></i>ALL JOBS</a>
+                <a href="contact.html"><i class="fas fa-angle-right"></i>CONTACT US</a>
+                <a href="#"><i class="fas fa-angle-right"></i>FILTER SEARCH</a>
+            </div>
+            <div class="box">
+                <h3>EXTRA LINKS</h3>
+                <a href="#"><i class="fas fa-angle-right"></i>ACCOUNT</a>
+                <a href="Login.htm"><i class="fas fa-angle-right"></i>LOGIN</a>
+                <a href="register.html"><i class="fas fa-angle-right"></i>REGISTER</a>
+                <a href="#"><i class="fas fa-angle-right"></i>POST JOB</a>
+                <a href="#"><i class="fas fa-angle-right"></i>DASHBOARD</a>
+            </div>
+            <div class="box">
+                <h3>FOLLOW US</h3>
+                <a href="#"><i class="fab fa-facebook-f"></i>FACEBOOK</a>
+                <a href="#"><i class="fab fa-twitter"></i>TWITTER</a>
+                <a href="#"><i class="fab fa-instagram"></i>INSTAGRAM</a>
+                <a href="#"><i class="fab fa-linkedin"></i>LINKEDIN</a>
+                <a href="#"><i class="fab fa-youtube"></i>YOUTUBE</a>
+            </div>
+        </section>
+        <div class="credit">&copy; copyright @ 2023 by <span>ms.web designer</span>| all rights reserved!</div>
+    </footer>
 
 
 
     <!--custom js file link-->
     <script src="script.js"></script>
+    <script>
+        let dropdown_items =document.querySelectorAll('.job-filter form .dropdown-container .dropdown .lists .items');
+
+        dropdown_items.forEach(items =>{
+           items.onclick =() =>{
+            items_parent = items.parentElement.parentElement;
+            let output = items_parent.querySelector('.output');
+            output.value = items.innerText;
+           } 
+        })
+    </script>
 </body>
+
 </html>
