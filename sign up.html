@@ -1,131 +1,89 @@
- <!DOCTYPE html>
-<html>
-<head>
-    <link rel="stylesheet" href="new form.css">
-    <style>
-        body{
-            background:linear-gradient(120deg,lightpink,indigo);
-        }
-    </style>
-</head>
-<body>
-    <tr><table burder="8">
-        
-        <h2>SIGN UP HERE</h2>
-        <hr>
-        <tr><table burder="8">
-            <td>First Name*</td><br>
-            <td>Last Name*</td>
-            
-        </tr>
-        <tr>
-            <td><input type="text" placeholder ="Enter Your First Name*"></td>
-            <td><input type="text" placeholder="Enter Your Last Name*"></td>
-        </tr><br>
-        <tr>
-            <td>Date Of Birth*</td>
-            <td>Gender*</td>
-            <td>Marital Status*</td>
-    
-        </tr>
-        <tr>
-            <td><input type="text" placeholder="Select Date Of Birth"></td>
-                <td><select name="gender*"><option value="Male">Male</option><option value="Female">Female</option></select></td>
-              <td><select name="marital status*"><option value="single">single</option><option value="married">married</option><option value="widow[er]">widow[er]</option><option value="devorced">devorced</option></select></td>
-                
-        </tr>
-        <tr>
-            <td>Phone*</td>
-            <td>Email*</td>
-        </tr>
-        <tr>
-            <td><input type="text" placeholder ="+250 7xxx"></td>
-            <td><input type="text" placeholder ="please enter your email ID"></td>
-        </tr>
-        <tr>
-            <td>Nationality*</td>
-            <td>National ID Card(or)Passport ID*</td>
-            <td>Place of issue*</td>
-        </tr>
-        <tr>
-            <td><select name="natinality*"><option value="Burundi">Burundi</option><option value="Rwanda">Rwanda</option><option value="Congo">Congo</option><option value="Algeria">Algeria</option></select></td>
-            <td><input type="text" placeholder="Enter NID Card number"></td>
-            <td><input type="text" placeholder="Enter place of issue"></td>
-    
-        </tr>
-        <tr>
-            <td>Father*</td>
-            <td>Phone</td>
-        </tr>
-        <tr>
-            <td><input type="text" placeholder="Enter Father Name"></td>
-            <td><input type="text" placeholder="Enter Phone number"></td>
-    
-        </tr>
-        <tr>
-            <td>Mother*</td>
-            <td>Phone</td>
-        </tr>
-        <tr>
-            <td><input type="text" placeholder="Enter Mother Name"></td>
-            <td><input type="text" placeholder="Enter phone number"></td>
-    
-        </tr>
-        <tr>
-            <td>Emergency Person to Contact*</td>
-            <td>Phone*</td>
-        </tr>
-        <tr>
-            <td><input type="text" placeholder="Emergency Person"></td>
-            <td><input type="text" placeholder="Enter Emergency phone number"></td>
-        </tr>
-        <tr>
-            <td>Spouse</td>
-            <td>Phone</td>
-        </tr>
-        <tr>
-            <td><input type="text" placeholder="Names of Spouse"></td>
-            <td><input type="text" placeholder="Spouse phone number"></td>
-        </tr>
-        <tr>
-            <td>Employee*</td>
-            <td>Employer Names</td>
-        </tr>
-        <tr>
-            <td><input type="text" placeholder="No"></td>
-            <td><input type="text" placeholder="Employer Names"></td>
-        </tr>
-        <tr>
-            <td>Disability*</td>
-            <td>Specify</td>
-        </tr>
-        <tr>
-            <td><input type="text" placeholder="No"></td>
-            <td><input type="text" placeholder="" name=""></td>
-        </tr>
-        <tr>
-            <td>Birth Province*</td>
-            <td>Birth district*</td>
-        </tr>
-        <tr>
-            <td><select name="birth province"><option value="------">-----</option><option value="East">East</option><option value="Kigali">Kigali</option><option value="North">North</option><option value="South">south</option><option value="West">west</option></select></td>
-            <td><select name="Birth district"><option value="-----">------</option><option value="------">----</option></select></td>
-    
-        </tr>
-        <tr>
-            <td><button><a href="#" class="submit">SUBMIT</a></button></td>
-        </tr>
-    </div>
-    <div class="innerbox">
-    
-    </div>
-    </body>
-    </html>
-        
-        
-    
-        
-        
-    
-        
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sign up</title>
+    <!-- custom css file link -->
+    <script src="https://kit.fontawesome.com/9e5cde3421.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- header section starts -->
+
+    <header class="header">
+        <section class="flex">
+            <div id="menu-btn" class="fas fa-bars-staggered"></div>
+
+            <a href="index.html" class="logo"><i class="fas fa-briefcase"></i>
+                JOB RECTRUITMEMT WEBSITE</a>
+
+            <nav class="navbar">
+                <a href="index.html">HOME</a>
+                <a href="about.html">ABOUT US</a>
+                <a href="jobs.html">ALL JOB</a>
+                <a href="contact.html">CONTACT US</a>
+                <a href="login.html">ACCOUNT</a>
+            </nav>
+            <a href="#" class="btn" style="margin-top:0;">POST JOB</a>
+        </section>
+    </header>
+    <!----acount section starts-->
+    <div class="account-form-container">
+        <section class="account-form">
+            <form action="" method="post">
+                <h3>create a new account!</h3>
+                <input type="text" required name="name" maxlength="20" placeholder="enter your first name" class="input">
+                <input type="text" required name="name" maxlength="20" placeholder="enter your last name" class="input">
+                <input type="phone" required name="name" maxlength="20" placeholder="enter your phone number" class="input">
+                <input type="text" required name="name" maxlength="20" placeholder="enter your empolyer name" class="input">
+                <input type="email" required name="name" maxlength="50" placeholder="enter your email" class="input">
+                <input type="password" required name="pass" maxlength="20" placeholder="enter your password"
+                    class="input">
+                <input type="password" required name="c_pass" maxlength="20" placeholder="confirm your password"
+                    class="input">
+                <p>already have an account? <a href="login.html">login now</a></p>
+                <input type="submit" value="sign up" name="submit" class="btn">
+            </form>
+        </section>
+    </div> 
+<footer class="footer">
+    <section class="grid">
+        <div class="box">
+            <h3>QUICK LINKS</h3>
+            <a href="index.html"><i class="fas fa-angle-right"></i>HOME</a>
+            <a href="about.html"><i class="fas fa-angle-right"></i>ABOUT</a>
+            <a href="jobs.html"><i class="fas fa-angle-right"></i>ALL JOBS</a>
+            <a href="contact.html"><i class="fas fa-angle-right"></i>CONTACT US</a>
+            <a href="#"><i class="fas fa-angle-right"></i>FILTER SEARCH</a>
+        </div>
+        <div class="box">
+            <h3>EXTRA LINKS</h3>
+            <a href="#"><i class="fas fa-angle-right"></i>ACCOUNT</a>
+            <a href="login.html"><i class="fas fa-angle-right"></i>LOGIN</a>
+            <a href="register.html"><i class="fas fa-angle-right"></i>REGISTER</a>
+            <a href="#"><i class="fas fa-angle-right"></i>POST JOB</a>
+            <a href="#"><i class="fas fa-angle-right"></i>DASHBOARD</a>
+            <a href="sign up.html"><i class="fas fa-angle-right"></i>sign up</a>
+        </div>
+        <div class="box">
+            <h3>FOLLOW US</h3>
+            <a href="#"><i class="fab fa-facebook-f"></i>FACEBOOK</a>
+            <a href="#"><i class="fab fa-twitter"></i>TWITTER</a>
+            <a href="#"><i class="fab fa-instagram"></i>INSTAGRAM</a>
+            <a href="#"><i class="fab fa-linkedin"></i>LINKEDIN</a>
+            <a href="#"><i class="fab fa-youtube"></i>YOUTUBE</a>
+        </div>
+    </section>
+    <div class="credit">&copy; copyright @ 2023 by <span>ms.web designer</span>| all rights reserved!</div>
+</footer>
+
+
+
+<!--custom js file link-->
+<script src="script.js"></script>
+</body>
+
+</html>

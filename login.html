@@ -3,31 +3,166 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MY LOGIN</title>  
-    <link rel="stylesheet" href="login.css">
+    <title>HOME</title>
+    <!-- custom css file link -->
+    <script src="https://kit.fontawesome.com/9e5cde3421.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <div class="center">
-        <h1>LOGIN</h1>
-        <form method="post">
-            <div class="txt-field">
-                <input type="text" required>
-                <span></span>
-                <label>Username</label>
-            </div>
-            <div class="txt-field">
-                <input type="password" required>
-                <span></span>
-                <label>Password</label>
-            </div>
-            <div class="pass">Forgot Password?</div>
-            <input type="submit" value="Login">
-            <div class="signup-link">
-                Not a member? <a href="sign up.html">Signup </a>
-            </div>
-        </form>
+    <!-- header section starts -->
+
+    <header class="header">
+        <section class="flex">
+            <div id="menu-btn" class="fas fa-bars-staggered"></div>
+
+            <a href="index.html" class="logo"><i class="fas fa-briefcase"></i>
+                JOB RECTRUITMEMT WEBSITE</a>
+
+            <nav class="navbar">
+                <a href="index.html">HOME</a>
+                <a href="about.html">ABOUT US</a>
+                <a href="jobs.html">ALL JOB</a>
+                <a href="contact.html">CONTACT US</a>
+                <a href="login.html">ACCOUNT</a>
+            </nav>
+            <a href="post job.html" class="btn" style="margin-top:0;">POST JOB</a>
+        </section>
+    </header>
+    <!----acount section starts-->
+    <div class="account-form-container">
+        <section class="account-form">
+            <form action="" method="post">
+                <h3>welcome customers!</h3>
+                <input type="email" required name="email" maxlength="50" placeholder="enter your email" class="input">
+                <input type="password" required name="pass" maxlength="20" placeholder="enter your password" class="input">
+                <p>create an account? <a href="register.html">register now</a></p>
+               <a href="jobs.html" class="btn">login</a>
+            </form>>
+        </section>
     </div>
+    <div class="account-form-container">
+        <section class="account-form">
+            <form action="" method="post">
+                <h3>welcome managers!</h3>
+                <input type="email" required name="email" maxlength="50" placeholder="enter your email" class="input">
+                <input type="password" required name="pass" maxlength="20" placeholder="enter your password" class="input">
+                <p>create an account? <a href="sign up.html">sign up now</a></p>
+                <a href="post job.html" class="btn">login</a>
+            </form>
+        </section>
+    </div>
+
+    <!----acount section endss-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--footer section starts-->
+
+    <footer class="footer">
+        <section class="grid">
+            <div class="box">
+                <h3>QUICK LINKS</h3>
+                <a href="index.html"><i class="fas fa-angle-right"></i>HOME</a>
+                <a href="about.html"><i class="fas fa-angle-right"></i>ABOUT</a>
+                <a href="jobs.html"><i class="fas fa-angle-right"></i>ALL JOBS</a>
+                <a href="contact.html"><i class="fas fa-angle-right"></i>CONTACT US</a>
+                <a href="#"><i class="fas fa-angle-right"></i>FILTER SEARCH</a>
+            </div>
+            <div class="box">
+                <h3>EXTRA LINKS</h3>
+                <a href="#"><i class="fas fa-angle-right"></i>ACCOUNT</a>
+                <a href="login.html"><i class="fas fa-angle-right"></i>LOGIN</a>
+                <a href="register.html"><i class="fas fa-angle-right"></i>REGISTER</a>
+                <a href="#"><i class="fas fa-angle-right"></i>POST JOB</a>
+                <a href="#"><i class="fas fa-angle-right"></i>DASHBOARD</a>
+                <a href="sign up.html"><i class="fas fa-angle-right"></i>sign up</a>
+            </div>
+            <div class="box">
+                <h3>FOLLOW US</h3>
+                <a href="#"><i class="fab fa-facebook-f"></i>FACEBOOK</a>
+                <a href="#"><i class="fab fa-twitter"></i>TWITTER</a>
+                <a href="#"><i class="fab fa-instagram"></i>INSTAGRAM</a>
+                <a href="#"><i class="fab fa-linkedin"></i>LINKEDIN</a>
+                <a href="#"><i class="fab fa-youtube"></i>YOUTUBE</a>
+            </div>
+        </section>
+        <div class="credit">&copy; copyright @ 2023 by <span>ms.web designer</span>| all rights reserved!</div>
+    </footer>
+
+    <!--custom js file link-->
+    <script src="script.js"></script>
 </body>
+
 </html>
